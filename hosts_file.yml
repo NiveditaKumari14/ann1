@@ -1,5 +1,5 @@
 --- 
 - 
   become: true
-  hosts: "10.0.4.88"
+  hosts: all
   name: "Install Haproxy"
