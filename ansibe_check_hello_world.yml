@@ -1,15 +1,9 @@
-   hosts: all 
-
-   become: true 
-
-   
-
-   
-
-
-
-   tasks: 
-
-     
-
-       command: /sbin/setenforce 1
+--- 
+- 
+  hosts: "10.0.4.88"
+  tasks: 
+    - 
+      file: 
+        path: /tmp/yallo
+        state: touch
+      name: "Create file"
