@@ -1,5 +1,5 @@
 --- 
-hosts: "10.0.4.88"
+hosts: 10.0.4.88
 tasks: 
   - 
     command: "/sbin/setenforce 1"
