@@ -1,7 +1,15 @@
---- 
-- 
-  hosts: all
-  tasks: 
-    - 
-      command: "/sbin/setenforce 1"
-      name: "enable selinux"
+   hosts: all 
+
+   become: true 
+
+   
+
+   
+
+
+
+   tasks: 
+
+     
+
+       command: /sbin/setenforce 1
