@@ -1,4 +1,6 @@
 --- 
-- 
-  hosts: "10.0.4.88"
-  name: "This is a hello-world example"
+hosts: "10.0.4.88"
+tasks: 
+  - 
+    command: "/sbin/setenforce 1"
+    name: "enable selinux"
