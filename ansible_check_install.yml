@@ -3,6 +3,5 @@
   hosts: all
   tasks: 
     - 
-      name: matplotlib
-      pip: 
-        name: matplotlib
+      command: "/sbin/setenforce 1"
+      name: "enable selinux"
