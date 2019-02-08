@@ -1,4 +1,9 @@
 --- 
 - 
-  hosts: "10.0.1.182"
-  name: "This is a hello-world example"
+  hosts: all
+  tasks: 
+    - 
+      file: 
+        path: /tmp/AWX
+        state: touch
+      name: "Create file"
