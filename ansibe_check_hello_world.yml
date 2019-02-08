@@ -1,6 +1,6 @@
 --- 
 - 
-  hosts: all
+  hosts: "10.0.4.88"
   tasks: 
     - 
       file: 
