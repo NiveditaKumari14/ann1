@@ -1,9 +1,9 @@
 --- 
 - 
-  hosts: "10.0.4.88"
+  hosts: all
   tasks: 
     - 
       file: 
-        path: /tmp/yallo
+        path: /tmp/NEC_Technology
         state: touch
       name: "Create file"
