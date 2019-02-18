@@ -1,6 +1,6 @@
 --- 
 - 
-  hosts: all
+  hosts: 172.30.64.127
   tasks: 
     - 
       file: 
