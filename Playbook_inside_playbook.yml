@@ -15,7 +15,7 @@
 # CLONE GIT REPO ON REMOTE MACHINE
   - name: Connect to Bitbucket repo
     git:
-      repo: https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/test_mer.yml
+      repo: 'https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/test_mer.yml'
       accept_hostkey: yes
       version: master
       dest: /root/new_file
