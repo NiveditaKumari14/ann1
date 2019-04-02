@@ -10,6 +10,7 @@
     yum:
       name:
         - git
+    ignore_errors: yes
 
 # CLONE GIT REPO ON REMOTE MACHINE
   - name: Connect to Bitbucket repo
