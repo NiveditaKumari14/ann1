@@ -23,9 +23,9 @@
   - name: Fetch yml from remote
     fetch:
       remote_src: yes
-      src: https://github.com/NiveditaKumari14/ann1/blob/master/ansibe_check_hello_world.yml
+      src: https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/test_mer.yml
       dest: /
       flat: yes
 
   - name: Run yml
-    include_tasks: "https://github.com/NiveditaKumari14/ann1/blob/master/ansibe_check_hello_world.yml"
+    include_tasks: "https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/test_mer.yml"
