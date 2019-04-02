@@ -1,0 +1,31 @@
+---
+- name: Deploy
+  hosts: all
+  become: yes
+
+
+  tasks:
+# INSTALL GIT ON REMOTE MACHINE
+  - name: Install GIT
+    apt:
+      pkg:
+        - git
+
+# CLONE GIT REPO ON REMOTE MACHINE
+  - name: Connect to Bitbucket repo
+    git:
+      repo: ssh://https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/
+      accept_hostkey: yes
+      version: master
+    
+
+# FETCH YML FROM BITBUCKET
+  - name: Fetch yml from remote
+    fetch:
+      remote_src: yes
+      src: https://github.com/NiveditaKumari14/ann1/blob/master/ansibe_check_hello_world.yml
+      dest: /
+      flat: yes
+
+  - name: Run yml
+    include_tasks: "https://github.com/NiveditaKumari14/ann1/blob/master/ansibe_check_hello_world.yml"
