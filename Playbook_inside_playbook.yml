@@ -28,6 +28,7 @@
     fetch:
       remote_src: yes
       src: 'https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/test_mer.yml'
+      file: dest=/root/new_file state=directory owner=nivedita.kumari@india.nec.com password=nivedita@12
       dest: /root/new_file
       update: no
       flat: yes
