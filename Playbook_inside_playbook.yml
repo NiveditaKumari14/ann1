@@ -19,6 +19,7 @@
       accept_hostkey: yes
       version: master
       dest: /root/new_file
+      update: no
       #key_file: /home/username/.ssh/id_rsa
     
 
@@ -26,8 +27,9 @@
   - name: Fetch yml from remote
     fetch:
       remote_src: yes
-      src: https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/test_mer.yml
+      src: 'https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/test_mer.yml'
       dest: /root/new_file
+      update: no
       flat: yes
 
   - name: Run yml
