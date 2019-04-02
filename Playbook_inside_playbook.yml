@@ -8,7 +8,7 @@
 # INSTALL GIT ON REMOTE MACHINE
   - name: Install GIT
     yum:
-      pkg:
+      name:
         - git
 
 # CLONE GIT REPO ON REMOTE MACHINE
