@@ -15,9 +15,11 @@
 # CLONE GIT REPO ON REMOTE MACHINE
   - name: Connect to Bitbucket repo
     git:
-      repo: ssh://https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/
+      repo: https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/
       accept_hostkey: yes
       version: master
+      dest: /root/new_file
+      #key_file: /home/username/.ssh/id_rsa
     
 
 # FETCH YML FROM BITBUCKET
@@ -25,7 +27,7 @@
     fetch:
       remote_src: yes
       src: https://bitbucket.org/nivedita0512/nec_repo_mer/src/default/test_mer.yml
-      dest: /
+      dest: /root/new_file
       flat: yes
 
   - name: Run yml
