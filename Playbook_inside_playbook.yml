@@ -7,7 +7,7 @@
   tasks:
 # INSTALL GIT ON REMOTE MACHINE
   - name: Install GIT
-    apt:
+    yum:
       pkg:
         - git
 
