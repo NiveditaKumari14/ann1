@@ -1,0 +1,17 @@
+---
+hosts: all
+tasks:
+    - yum:
+        name: "{{ item }}"
+        state: installed
+      loop:
+         - httpd
+         - memcached
+      tags:
+         - packages
+
+    - template:
+        src: templates/src.j2
+        dest: /etc/foo.conf
+      tags:
+         - configuration
