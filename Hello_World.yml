@@ -16,7 +16,7 @@
   
   - name: be sure ntpd is running and enabled
     service: 
-      enabled: true
+      enabled: false
       name: ntpd
       state: started
     tags: ntpt
