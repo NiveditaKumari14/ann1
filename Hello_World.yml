@@ -1,7 +1,5 @@
---- 
-hosts: all
-tasks: 
-  
+- hosts: all
+  tasks: 
   - name: be sure ntp is installed
     tags: ntp
     yum: 
