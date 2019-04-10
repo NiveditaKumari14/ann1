@@ -7,6 +7,7 @@ tasks:
     yum: 
       name: ntp
       state: installed
+  
   - name: be sure ntp is configured
     notify: 
       - "restart ntpd"
@@ -14,6 +15,7 @@ tasks:
     template: 
       dest: /etc/ntp.conf
       src: ntp.conf.j2
+  
   - name: be sure ntpd is running and enabled
     service: 
       enabled: true
