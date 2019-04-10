@@ -3,7 +3,7 @@
   name: "be sure ntp is installed"
   tags: ntp
   hosts: all
-  yum: 
+  pip: 
     name: ntp
     state: installed
 - 
