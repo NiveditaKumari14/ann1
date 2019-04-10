@@ -19,4 +19,4 @@
       enabled: true
       name: ntpd
       state: started
-    tags: ntp
+    tags: ntpt
