@@ -1,13 +1,13 @@
 --- 
-- 
-  name: "be sure ntp is installed"
+
+- name: "be sure ntp is installed"
   tags: ntp
   hosts: all
   pip: 
     name: ntp
     state: installed
-- 
-  name: "be sure ntp is configured"
+ 
+- name: "be sure ntp is configured"
   notify: 
     - "restart ntpd"
   tags: ntp
