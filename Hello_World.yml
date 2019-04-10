@@ -1,8 +1,9 @@
---- 
+---
+hosts: all
+tasks:
 
 - name: "be sure ntp is installed"
   tags: ntp
-  hosts: all
   yum: 
     name: ntp
     state: installed
