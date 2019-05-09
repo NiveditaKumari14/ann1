@@ -2,7 +2,7 @@
 - 
   become: true
   hosts: all
-  name: "Install nginx"
+  name: "Install source insight"
   tasks: 
     - 
       name: "Add epel-release repo"
@@ -10,8 +10,8 @@
         name: epel-release
         state: present
     - 
-      name: "Install nginx"
+      name: "sorce insight"
       yum: 
-        name: nginx
+        name: Source Insight
         state: present
 
