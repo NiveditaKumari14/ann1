@@ -1,7 +1,7 @@
 --- 
 - 
   become: true
-  hosts: host.name.ip
+  hosts: all
   name: "Install nginx"
   tasks: 
     - 
