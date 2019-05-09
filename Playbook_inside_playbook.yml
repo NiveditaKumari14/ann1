@@ -2,7 +2,7 @@
 - 
   become: true
   hosts: all
-  name: "Install source insight"
+  name: "Install notepad++"
   tasks: 
     - 
       name: "Add epel-release repo"
@@ -10,8 +10,8 @@
         name: epel-release
         state: present
     - 
-      name: "sorce insight"
+      name: "notepad++"
       yum: 
-        name: Source Insight
+        name: notepad++
         state: present
 
