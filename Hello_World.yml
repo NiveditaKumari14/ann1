@@ -1,22 +1,9 @@
-- hosts: all
-  tasks: 
-  - name: "be sure ntp is installed"
-    tags: ntp
-    yum: 
-      name: ntp
-      state: installed
-  
-  - name: "be sure ntp is configured"
-    notify: 
-      - "restart ntpd"
-    tags: ntp
-    template: 
-      dest: /etc/ntp.conf
-      src: ntp.conf.j2
-  
-  - name: "be sure ntpd is running and enabled"
-    service: 
-      enabled: false
-      name: ntpd
-      state: started
-    tags: ntpt
+    
+---
+- name: Hello World!
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Hello World!
+    shell: echo "Hi! Ansible is working."
